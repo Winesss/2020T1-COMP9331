@@ -1,0 +1,812 @@
+﻿Exercise1_1
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.koala.com.au
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+Name:   www.koala.com.au
+Address: 104.18.61.21
+Name:   www.koala.com.au
+Address: 104.18.60.21
+
+Exercise1_2
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup 127.0.0.1
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+1.0.0.127.in-addr.arpa  name = localhost.
+
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup localhost
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Name:   localhost.orchestra.cse.unsw.EDU.AU
+Address: 127.0.0.1
+
+Exercise2
+www.unsw.edu.au
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.unsw.edu.au
+PING www.unsw.edu.au (202.58.60.194) 56(84) bytes of data.
+64 bytes from 202.58.60.194: icmp_req=1 ttl=242 time=24.7 ms
+64 bytes from 202.58.60.194: icmp_req=2 ttl=242 time=24.3 ms
+64 bytes from 202.58.60.194: icmp_req=3 ttl=242 time=24.6 ms
+64 bytes from 202.58.60.194: icmp_req=4 ttl=242 time=24.3 ms
+
+--- www.unsw.edu.au ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24.302/24.506/24.766/0.256 ms
+
+www.getfittest.com.au
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.getfittest.com.au
+ping: unknown host www.getfittest.com.au
+
+www.mit.edu
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.mit.edu
+PING e9566.dscb.akamaiedge.net (104.98.31.173) 56(84) bytes of data.
+64 bytes from a104-98-31-173.deploy.static.akamaitechnologies.com (104.98.31.173): icmp_req=1 ttl=56 time=1.26 ms
+64 bytes from a104-98-31-173.deploy.static.akamaitechnologies.com (104.98.31.173): icmp_req=2 ttl=56 time=1.14 ms
+64 bytes from a104-98-31-173.deploy.static.akamaitechnologies.com (104.98.31.173): icmp_req=3 ttl=56 time=1.22 ms
+64 bytes from a104-98-31-173.deploy.static.akamaitechnologies.com (104.98.31.173): icmp_req=4 ttl=56 time=1.17 ms
+
+--- e9566.dscb.akamaiedge.net ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 1.148/1.202/1.263/0.056 ms
+
+www.intel.com.au
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.intel.com.au
+PING e19235.dsca.akamaiedge.net (104.74.52.132) 56(84) bytes of data.
+64 bytes from a104-74-52-132.deploy.static.akamaitechnologies.com (104.74.52.132): icmp_req=1 ttl=56 time=1.35 ms
+64 bytes from a104-74-52-132.deploy.static.akamaitechnologies.com (104.74.52.132): icmp_req=2 ttl=56 time=1.17 ms
+64 bytes from a104-74-52-132.deploy.static.akamaitechnologies.com (104.74.52.132): icmp_req=3 ttl=56 time=1.46 ms
+64 bytes from a104-74-52-132.deploy.static.akamaitechnologies.com (104.74.52.132): icmp_req=4 ttl=56 time=1.20 ms
+
+--- e19235.dsca.akamaiedge.net ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 1.173/1.300/1.467/0.121 ms
+
+www.tpg.com.au
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.tpg.com.au
+PING www.tpg.com.au (203.26.27.38) 56(84) bytes of data.
+64 bytes from www.tpg.com.au (203.26.27.38): icmp_req=1 ttl=118 time=30.4 ms
+64 bytes from www.tpg.com.au (203.26.27.38): icmp_req=2 ttl=118 time=29.9 ms
+64 bytes from www.tpg.com.au (203.26.27.38): icmp_req=3 ttl=118 time=29.7 ms
+64 bytes from www.tpg.com.au (203.26.27.38): icmp_req=4 ttl=118 time=29.8 ms
+
+--- www.tpg.com.au ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 29.798/30.009/30.429/0.330 ms
+
+www.hola.hp
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.hola.hp
+ping: unknown host www.hola.hp
+
+www.amazon.com
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.amazon.com
+PING d3ag4hukkh62yn.cloudfront.net (13.35.141.74) 56(84) bytes of data.
+64 bytes from server-13-35-141-74.syd1.r.cloudfront.net (13.35.141.74): icmp_req=1 ttl=244 time=1.09 ms
+64 bytes from server-13-35-141-74.syd1.r.cloudfront.net (13.35.141.74): icmp_req=2 ttl=244 time=1.34 ms
+64 bytes from server-13-35-141-74.syd1.r.cloudfront.net (13.35.141.74): icmp_req=3 ttl=244 time=1.26 ms
+64 bytes from server-13-35-141-74.syd1.r.cloudfront.net (13.35.141.74): icmp_req=4 ttl=244 time=1.08 ms
+
+--- d3ag4hukkh62yn.cloudfront.net ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 1.082/1.195/1.340/0.111 ms
+
+www.tsinghua.edu.cn
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.tsinghua.edu.cn
+PING www.tsinghua.edu.cn (166.111.4.100) 56(84) bytes of data.
+64 bytes from www.tsinghua.edu.cn (166.111.4.100): icmp_req=1 ttl=44 time=248 ms
+64 bytes from www.tsinghua.edu.cn (166.111.4.100): icmp_req=2 ttl=44 time=248 ms
+64 bytes from www.tsinghua.edu.cn (166.111.4.100): icmp_req=3 ttl=44 time=248 ms
+64 bytes from www.tsinghua.edu.cn (166.111.4.100): icmp_req=4 ttl=44 time=248 ms
+
+--- www.tsinghua.edu.cn ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 248.529/248.586/248.620/0.036 ms
+
+www.kremlin.ru
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 www.kremlin.ru
+PING www.kremlin.ru (95.173.136.71) 56(84) bytes of data.
+
+--- www.kremlin.ru ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3051ms
+
+8.8.8.8
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_req=1 ttl=53 time=1.54 ms
+64 bytes from 8.8.8.8: icmp_req=2 ttl=53 time=1.61 ms
+64 bytes from 8.8.8.8: icmp_req=3 ttl=53 time=1.62 ms
+64 bytes from 8.8.8.8: icmp_req=4 ttl=53 time=1.56 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 1.544/1.586/1.628/0.052 ms
+
+
+Exercise3_1
+
+(1)
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ traceroute www.columbia.edu
+traceroute to www.columbia.edu (128.59.105.24), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.152 ms  0.137 ms  0.122 ms
+ 2  129.94.39.17 (129.94.39.17)  0.891 ms  0.921 ms  0.882 ms
+ 3  ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  1.452 ms libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.596 ms  1.615 ms
+ 4  libcr1-po-5.gw.unsw.edu.au (149.171.255.165)  1.106 ms ombcr1-po-6.gw.unsw.edu.au (149.171.255.169)  1.152 ms ombcr1-po-5.gw.unsw.edu.au (149.171.255.197)  1.157 ms
+ 5  unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.190 ms  1.215 ms unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.245 ms
+ 6  138.44.5.0 (138.44.5.0)  19.872 ms  19.094 ms  19.119 ms
+ 7  et-1-3-0.pe1.sxt.bkvl.nsw.aarnet.net.au (113.197.15.149)  2.218 ms  2.161 ms  2.114 ms
+ 8  et-0-0-0.pe1.a.hnl.aarnet.net.au (113.197.15.99)  95.055 ms  95.012 ms  95.030 ms
+ 9  et-2-1-0.bdr1.a.sea.aarnet.net.au (113.197.15.201)  146.925 ms  146.913 ms  146.877 ms
+10  abilene-1-lo-jmb-706.sttlwa.pacificwave.net (207.231.240.8)  154.019 ms  153.936 ms  153.788 ms
+11  ae-1.4079.rtsw.minn.net.internet2.edu (162.252.70.173)  179.754 ms  179.874 ms  179.813 ms
+12  ae-1.4079.rtsw.eqch.net.internet2.edu (162.252.70.106)  188.126 ms  188.128 ms  188.118 ms
+13  ae-0.4079.rtsw3.eqch.net.internet2.edu (162.252.70.163)  190.328 ms  215.498 ms  214.737 ms
+14  ae-1.4079.rtsw.clev.net.internet2.edu (162.252.70.130)  196.388 ms  196.309 ms  196.363 ms
+15  buf-9208-I2-CLEV.nysernet.net (199.109.11.33)  200.594 ms  200.670 ms  200.658 ms
+16  syr-9208-buf-9208.nysernet.net (199.109.7.193)  203.824 ms  203.867 ms  203.741 ms
+17  nyc111-9204-syr-9208.nysernet.net (199.109.7.94)  212.984 ms  213.338 ms  213.011 ms
+18  nyc-9208-nyc111-9204.nysernet.net (199.109.7.165)  212.997 ms  213.156 ms  213.070 ms
+19  columbia.nyc-9208.nysernet.net (199.109.4.14)  212.972 ms  212.997 ms  213.015 ms
+20  cc-core-1-x-nyser32-gw-1.net.columbia.edu (128.59.255.5)  213.263 ms  213.191 ms  213.385 ms
+21  cc-conc-1-x-cc-core-1.net.columbia.edu (128.59.255.21)  213.449 ms  213.308 ms  213.400 ms
+22  ccnmtl.columbia.edu (128.59.105.24)  213.228 ms  213.141 ms  213.254 ms
+
+(2)
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ dig -x 138.44.5.0
+
+; <<>> DiG 9.9.5-9+deb8u18-Debian <<>> -x 138.44.5.0
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 34004
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;0.5.44.138.in-addr.arpa.       IN      PTR
+
+;; AUTHORITY SECTION:
+5.44.138.in-addr.arpa.  3302    IN      SOA     ns1.aarnet.net.au. hostmaster.aarnet.edu.au. 2017121507 10800 600 1209600 3600
+
+;; Query time: 0 msec
+;; SERVER: 129.94.242.45#53(129.94.242.45)
+;; WHEN: Sat Feb 29 15:31:37 AEDT 2020
+;; MSG SIZE  rcvd: 127
+
+(3)
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 113.197.15.149
+PING 113.197.15.149 (113.197.15.149) 56(84) bytes of data.
+64 bytes from 113.197.15.149: icmp_req=1 ttl=58 time=2.24 ms
+64 bytes from 113.197.15.149: icmp_req=2 ttl=58 time=2.17 ms
+64 bytes from 113.197.15.149: icmp_req=3 ttl=58 time=2.13 ms
+64 bytes from 113.197.15.149: icmp_req=4 ttl=58 time=2.03 ms
+
+--- 113.197.15.149 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 2.033/2.147/2.247/0.077 ms
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ ping -c 4 113.197.15.99
+PING 113.197.15.99 (113.197.15.99) 56(84) bytes of data.
+64 bytes from 113.197.15.99: icmp_req=1 ttl=57 time=95.0 ms
+64 bytes from 113.197.15.99: icmp_req=2 ttl=57 time=94.9 ms
+64 bytes from 113.197.15.99: icmp_req=3 ttl=57 time=94.9 ms
+64 bytes from 113.197.15.99: icmp_req=4 ttl=57 time=94.9 ms
+
+--- 113.197.15.99 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3000ms
+rtt min/avg/max/mdev = 94.947/94.987/95.043/0.220 ms
+
+Exercise3_2
+(1)
+www.ucla.edu
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ traceroute www.ucla.edu
+traceroute to www.ucla.edu (164.67.228.152), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.139 ms  0.122 ms  0.111 ms
+ 2  129.94.39.17 (129.94.39.17)  0.889 ms  0.842 ms  0.876 ms
+ 3  ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  1.479 ms libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.565 ms  1.587 ms
+ 4  ombcr1-po-6.gw.unsw.edu.au (149.171.255.169)  1.096 ms libcr1-po-6.gw.unsw.edu.au (149.171.255.201)  1.158 ms libcr1-po-5.gw.unsw.edu.au (149.171.255.165)  1.084 ms
+ 5  unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.161 ms unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.177 ms unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.222 ms
+ 6  138.44.5.0 (138.44.5.0)  1.276 ms  1.390 ms  1.337 ms
+ 7  et-1-3-0.pe1.sxt.bkvl.nsw.aarnet.net.au (113.197.15.149)  2.244 ms  2.159 ms  2.106 ms
+ 8  et-0-0-0.pe1.a.hnl.aarnet.net.au (113.197.15.99)  95.120 ms  95.008 ms  95.050 ms
+ 9  et-2-1-0.bdr1.a.sea.aarnet.net.au (113.197.15.201)  146.902 ms  146.909 ms  146.899 ms
+10  cenichpr-1-is-jmb-778.snvaca.pacificwave.net (207.231.245.129)  164.016 ms  163.437 ms  163.395 ms
+11  hpr-lax-hpr3--svl-hpr3-100ge.cenic.net (137.164.25.73)  160.109 ms  160.823 ms  160.794 ms
+12  * * *
+13  bd11f1.anderson--cr001.anderson.ucla.net (169.232.4.6)  161.027 ms bd11f1.anderson--cr00f2.csb1.ucla.net (169.232.4.4)  162.253 ms  162.154 ms
+14  cr00f1.anderson--rtr12f4.mathsci.ucla.net (169.232.8.187)  160.630 ms  161.149 ms cr00f1.anderson--rtr11f4.mathsci.ucla.net (169.232.8.185)  160.611 ms
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+
+www.u-tokyo.ac.jp
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ traceroute www.u-tokyo.ac.jp
+traceroute to www.u-tokyo.ac.jp (210.152.243.234), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.103 ms  0.083 ms  0.053 ms
+ 2  129.94.39.17 (129.94.39.17)  0.808 ms  0.837 ms  0.793 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.527 ms  1.486 ms ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  1.475 ms
+ 4  ombcr1-po-5.gw.unsw.edu.au (149.171.255.197)  1.101 ms  1.107 ms libcr1-po-5.gw.unsw.edu.au (149.171.255.165)  1.076 ms
+ 5  unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.099 ms  1.132 ms unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.140 ms
+ 6  138.44.5.0 (138.44.5.0)  1.457 ms  1.251 ms  1.271 ms
+ 7  et-0-3-0.pe1.bkvl.nsw.aarnet.net.au (113.197.15.147)  3.694 ms  3.304 ms  3.363 ms
+ 8  ge-4_0_0.bb1.a.pao.aarnet.net.au (202.158.194.177)  155.011 ms  154.969 ms  154.975 ms
+ 9  paloalto0.iij.net (198.32.176.24)  156.415 ms  156.420 ms  156.485 ms
+10  osk004bb00.IIJ.Net (58.138.88.185)  287.066 ms osk004bb01.IIJ.Net (58.138.88.189)  269.309 ms osk004bb00.IIJ.Net (58.138.88.185)  286.925 ms
+11  osk004ip57.IIJ.Net (58.138.106.162)  277.991 ms osk004ip57.IIJ.Net (58.138.106.166)  269.180 ms osk004ip57.IIJ.Net (58.138.106.162)  277.913 ms
+12  210.130.135.130 (210.130.135.130)  304.532 ms  301.971 ms  301.935 ms
+13  124.83.228.58 (124.83.228.58)  279.531 ms  293.234 ms  293.177 ms
+14  124.83.252.178 (124.83.252.178)  293.299 ms  293.212 ms  293.197 ms
+15  158.205.134.26 (158.205.134.26)  292.983 ms  292.978 ms  284.122 ms
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+
+www.lancaster.ac.uk
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ traceroute www.lancaster.ac.uk
+traceroute to www.lancaster.ac.uk (148.88.65.80), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.083 ms  0.068 ms  0.070 ms
+ 2  129.94.39.17 (129.94.39.17)  0.934 ms  0.928 ms  0.860 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.605 ms ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  14.242 ms libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.588 ms
+ 4  libcr1-po-6.gw.unsw.edu.au (149.171.255.201)  1.237 ms  1.124 ms  1.151 ms
+ 5  unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.162 ms unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.206 ms unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.180 ms
+ 6  138.44.5.0 (138.44.5.0)  1.382 ms  1.298 ms  1.286 ms
+ 7  et-2-0-5.bdr1.sing.sin.aarnet.net.au (113.197.15.233)  92.761 ms  92.508 ms  92.516 ms
+ 8  138.44.226.7 (138.44.226.7)  259.981 ms  259.938 ms  259.950 ms
+ 9  janet-gw.mx1.lon.uk.geant.net (62.40.124.198)  260.087 ms  260.033 ms  260.079 ms
+10  ae29.londpg-sbr2.ja.net (146.97.33.2)  281.150 ms  281.092 ms  281.053 ms
+11  ae31.erdiss-sbr2.ja.net (146.97.33.22)  264.334 ms  264.175 ms  264.098 ms
+12  ae29.manckh-sbr2.ja.net (146.97.33.42)  266.334 ms  266.234 ms  266.054 ms
+13  ae24.lanclu-rbr1.ja.net (146.97.38.58)  268.432 ms  268.387 ms  268.429 ms
+14  lancaster-university.ja.net (194.81.46.2)  280.357 ms  280.306 ms  280.312 ms
+15  is-border01.bfw01.rtr.lancs.ac.uk (148.88.253.202)  268.918 ms  269.033 ms  268.885 ms
+16  bfw01.iss-servers.is-core01.rtr.lancs.ac.uk (148.88.250.98)  274.073 ms  271.887 ms  270.577 ms
+17  * * *
+18  www.lancs.ac.uk (148.88.65.80)  269.067 ms !X  269.030 ms !X  269.221 ms !X
+
+(2)
+more details about 138.44.5.0
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ whois 138.44.5.0
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2020, American Registry for Internet Numbers, Ltd.
+#
+
+
+NetRange:       138.44.0.0 - 138.44.255.255
+CIDR:           138.44.0.0/16
+NetName:        APNIC-ERX-138-44-0-0
+NetHandle:      NET-138-44-0-0-1
+Parent:         NET138 (NET-138-0-0-0-0)
+NetType:        Early Registrations, Transferred to APNIC
+OriginAS:       
+Organization:   Asia Pacific Network Information Centre (APNIC)
+RegDate:        2003-12-11
+Updated:        2009-10-08
+Comment:        This IP address range is not registered in the ARIN database.
+Comment:        This range was transferred to the APNIC Whois Database as
+Comment:        part of the ERX (Early Registration Transfer) project.
+Comment:        For details, refer to the APNIC Whois Database via
+Comment:        WHOIS.APNIC.NET or http://wq.apnic.net/apnic-bin/whois.pl
+Comment:        
+Comment:        ** IMPORTANT NOTE: APNIC is the Regional Internet Registry
+Comment:        for the Asia Pacific region.  APNIC does not operate networks
+Comment:        using this IP address range and is not able to investigate
+Comment:        spam or abuse reports relating to these addresses.  For more
+Comment:        help, refer to http://www.apnic.net/apnic-info/whois_search2/abuse-and-spamming
+Ref:            https://rdap.arin.net/registry/ip/138.44.0.0
+
+ResourceLink:  http://wq.apnic.net/whois-search/static/search.html
+ResourceLink:  whois.apnic.net
+
+
+OrgName:        Asia Pacific Network Information Centre
+OrgId:          APNIC
+Address:        PO Box 3646
+City:           South Brisbane
+StateProv:      QLD
+PostalCode:     4101
+Country:        AU
+RegDate:        
+Updated:        2012-01-24
+Ref:            https://rdap.arin.net/registry/entity/APNIC
+
+ReferralServer:  whois://whois.apnic.net
+ResourceLink:  http://wq.apnic.net/whois-search/static/search.html
+
+OrgAbuseHandle: AWC12-ARIN
+OrgAbuseName:   APNIC Whois Contact
+OrgAbusePhone:  +61 7 3858 3188 
+OrgAbuseEmail:  search-apnic-not-arin@apnic.net
+OrgAbuseRef:    https://rdap.arin.net/registry/entity/AWC12-ARIN
+
+OrgTechHandle: AWC12-ARIN
+OrgTechName:   APNIC Whois Contact
+OrgTechPhone:  +61 7 3858 3188 
+OrgTechEmail:  search-apnic-not-arin@apnic.net
+OrgTechRef:    https://rdap.arin.net/registry/entity/AWC12-ARIN
+
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2020, American Registry for Internet Numbers, Ltd.
+#
+
+
+
+Found a referral to whois.apnic.net.
+
+% [whois.apnic.net]
+% Whois data copyright terms    http://www.apnic.net/db/dbcopyright.html
+
+% Information related to '138.44.0.0 - 138.44.255.255'
+
+% Abuse contact for '138.44.0.0 - 138.44.255.255' is 'abuse@aarnet.edu.au'
+
+inetnum:        138.44.0.0 - 138.44.255.255
+netname:        AARNET
+descr:          Australian Academic and Research Network
+descr:          Building 9
+descr:          Banks Street
+country:        AU
+org:            ORG-AAAR1-AP
+admin-c:        SM6-AP
+tech-c:         ANOC-AP
+notify:         irrcontact@aarnet.edu.au
+mnt-by:         APNIC-HM
+mnt-lower:      MAINT-AARNET-AP
+mnt-routes:     MAINT-AARNET-AP
+mnt-irt:        IRT-AARNET-AU
+status:         ALLOCATED PORTABLE
+remarks:        -+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+remarks:        This object can only be updated by APNIC hostmasters.
+remarks:        To update this object, please contact APNIC
+remarks:        hostmasters and include your organisation's account
+remarks:        name in the subject line.
+remarks:        -+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+last-modified:  2017-10-09T13:02:43Z
+source:         APNIC
+
+irt:            IRT-AARNET-AU
+address:        AARNet Pty Ltd
+address:        26 Dick Perry Avenue
+address:        Kensington, Western Australia
+address:        Australia
+e-mail:         abuse@aarnet.edu.au
+abuse-mailbox:  abuse@aarnet.edu.au
+admin-c:        SM6-AP
+tech-c:         ANOC-AP
+auth:           # Filtered
+remarks:        abuse@aarnet.edu.au was validated on 2019-12-03
+mnt-by:         MAINT-AARNET-AP
+last-modified:  2019-12-03T21:30:31Z
+source:         APNIC
+
+organisation:   ORG-AAAR1-AP
+org-name:       Australian Academic and Research Network
+country:        AU
+address:        Building 9
+address:        Banks Street
+phone:          +61-2-6222-3530
+fax-no:         +61-2-6222-3535
+e-mail:         irrcontact@aarnet.edu.au
+mnt-ref:        APNIC-HM
+mnt-by:         APNIC-HM
+last-modified:  2017-10-09T12:56:36Z
+source:         APNIC
+
+role:           AARNet Network Operations Centre
+remarks:
+address:        AARNet Pty Ltd
+address:        GPO Box 1559
+address:        Canberra
+address:        ACT  2601
+country:        AU
+phone:          +61 1300 275 662
+phone:          +61 2 6222 3555
+remarks:
+e-mail:         noc@aarnet.edu.au
+remarks:
+remarks:        Send abuse reports to abuse@aarnet.edu.au
+remarks:        Please include timestamps and offset to UTC in logs
+remarks:        Peering requests to peering@aarnet.edu.au
+remarks:
+admin-c:        SM6-AP
+tech-c:         BM-AP
+nic-hdl:        ANOC-AP
+mnt-by:         MAINT-AARNET-AP
+last-modified:  2010-06-30T13:16:48Z
+source:         APNIC
+
+person:         Steve Maddocks
+remarks:        Director Operations
+address:        AARNet Pty Ltd
+address:        26 Dick Perry Avenue
+address:        Kensington
+address:        Perth
+address:        WA  6151
+country:        AU
+phone:          +61-8-9289-2210
+fax-no:         +61-2-6222-7509
+e-mail:         steve.maddocks@aarnet.edu.au
+nic-hdl:        SM6-AP
+mnt-by:         MAINT-AARNET-AP
+last-modified:  2011-02-01T08:37:06Z
+source:         APNIC
+
+% Information related to '138.44.5.0/24AS7575'
+
+route:          138.44.5.0/24
+origin:         AS7575
+descr:          Australian Academic and Research Network
+                Building 9
+                Banks Street
+mnt-by:         MAINT-AARNET-AP
+last-modified:  2019-04-03T03:55:51Z
+source:         APNIC
+
+% This query was served by the APNIC Whois Service version 1.88.15-46 (WHOIS-NODE2)
+
+(3)
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.ucla.edu
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+www.ucla.edu    canonical name = gateway.lb.it.ucla.edu.
+Name:   gateway.lb.it.ucla.edu
+Address: 164.67.228.152
+
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.u-tokyo.ac.jp
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+Name:   www.u-tokyo.ac.jp
+Address: 210.152.243.234
+
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.lancaster.ac.uk
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+lancaster.ac.uk dname = lancs.ac.uk.
+www.lancaster.ac.uk     canonical name = www.lancs.ac.uk.
+Name:   www.lancs.ac.uk
+Address: 148.88.65.80
+
+Exercise3_3
+(1)
+http://www.speedtest.com.sg/tr.php
+reverse direction:
+
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ traceroute www.speedtest.com.sg
+traceroute to www.speedtest.com.sg (202.150.221.170), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.148 ms  0.135 ms  0.122 ms
+ 2  129.94.39.17 (129.94.39.17)  0.841 ms  0.870 ms  0.826 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.491 ms  1.436 ms ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  1.555 ms
+ 4  libcr1-po-6.gw.unsw.edu.au (149.171.255.201)  1.075 ms ombcr1-po-5.gw.unsw.edu.au (149.171.255.197)  1.112 ms ombcr1-po-6.gw.unsw.edu.au (149.171.255.169)  1.144 ms
+ 5  unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.170 ms unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.204 ms  1.102 ms
+ 6  138.44.5.0 (138.44.5.0)  1.358 ms  1.718 ms  1.650 ms
+ 7  et-0-3-0.pe1.alxd.nsw.aarnet.net.au (113.197.15.153)  1.658 ms  1.720 ms  1.727 ms
+ 8  xe-0-2-7.bdr1.a.lax.aarnet.net.au (202.158.194.173)  147.600 ms  147.609 ms  147.561 ms
+ 9  singtel.as7473.any2ix.coresite.com (206.72.210.63)  149.698 ms  149.562 ms  149.570 ms
+10  203.208.171.117 (203.208.171.117)  148.017 ms  148.105 ms 203.208.173.81 (203.208.173.81)  332.861 ms
+11  203.208.172.145 (203.208.172.145)  242.531 ms 203.208.177.110 (203.208.177.110)  319.823 ms  321.131 ms
+12  203.208.158.17 (203.208.158.17)  329.591 ms 203.208.182.253 (203.208.182.253)  327.451 ms *
+13  203.208.177.110 (203.208.177.110)  314.947 ms 202-150-221-170.rev.ne.com.sg (202.150.221.170)  212.424 ms 203.208.177.110 (203.208.177.110)  309.962 ms
+
+https://www.telstra.net/cgi-bin/trace
+reverse direction:
+
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ traceroute www.telstra.net
+traceroute to www.telstra.net (203.50.5.178), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.102 ms  0.095 ms  0.084 ms
+ 2  129.94.39.17 (129.94.39.17)  0.854 ms  0.792 ms  0.842 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.511 ms ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  1.378 ms libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.515 ms
+ 4  ombcr1-po-5.gw.unsw.edu.au (149.171.255.197)  1.073 ms libcr1-po-6.gw.unsw.edu.au (149.171.255.201)  1.086 ms libcr1-po-5.gw.unsw.edu.au (149.171.255.165)  1.088 ms
+ 5  unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  24.187 ms  24.195 ms unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  24.185 ms
+ 6  138.44.5.0 (138.44.5.0)  1.383 ms  1.221 ms  1.327 ms
+ 7  xe-0-0-0.bdr1.rsby.nsw.aarnet.net.au (113.197.15.33)  1.655 ms  1.681 ms  1.684 ms
+ 8  gigabitethernet3-11.ken37.sydney.telstra.net (139.130.0.77)  2.381 ms  2.291 ms  2.382 ms
+ 9  bundle-ether13.ken-core10.sydney.telstra.net (203.50.11.94)  4.164 ms bundle-ether2.chw-edge901.sydney.telstra.net (203.50.11.103)  2.247 ms  2.256 ms
+10  bundle-ether13.chw-core10.sydney.telstra.net (203.50.11.98)  3.937 ms  3.833 ms  2.778 ms
+11  203.50.6.40 (203.50.6.40)  15.155 ms bundle-ether8.exi-core10.melbourne.telstra.net (203.50.11.125)  14.244 ms  13.616 ms
+12  bundle-ether2.exi-ncprouter101.melbourne.telstra.net (203.50.11.209)  13.477 ms  12.993 ms  13.272 ms
+13  www.telstra.net (203.50.5.178)  12.635 ms  12.653 ms  12.590 ms
+
+(2)
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.speedtest.com.sg
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+Name:   www.speedtest.com.sg
+Address: 202.150.221.170
+
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.telstra.net
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+Name:   www.telstra.net
+Address: 203.50.5.178
+
+
+Exercise 4_1
+(1)
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.uq.edu.au
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+Name:   www.uq.edu.au
+Address: 130.102.184.3
+
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.dlsu.edu.ph
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+Name:   www.dlsu.edu.ph
+Address: 103.231.241.180
+
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ nslookup www.tu-berlin.de
+Server:         129.94.242.45
+Address:        129.94.242.45#53
+
+Non-authoritative answer:
+Name:   www.tu-berlin.de
+Address: 130.149.7.201
+
+(2)
+www.uq.edu.au
+PING www.uq.edu.au (130.102.184.3) 22(50) bytes of data.
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=1 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=2 ttl=239 time=16.8 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=3 ttl=239 time=16.5 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=4 ttl=239 time=16.7 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=5 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=6 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=7 ttl=239 time=17.1 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=8 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=9 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=10 ttl=239 time=17.2 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=11 ttl=239 time=17.2 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=12 ttl=239 time=17.1 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=13 ttl=239 time=17.1 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=14 ttl=239 time=16.8 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=15 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=16 ttl=239 time=17.0 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=17 ttl=239 time=17.0 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=18 ttl=239 time=16.8 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=19 ttl=239 time=17.0 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=20 ttl=239 time=16.7 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=21 ttl=239 time=16.8 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=22 ttl=239 time=17.1 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=23 ttl=239 time=17.2 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=24 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=25 ttl=239 time=17.0 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=26 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=27 ttl=239 time=17.0 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=28 ttl=239 time=16.8 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=29 ttl=239 time=17.0 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=30 ttl=239 time=16.9 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=31 ttl=239 time=17.3 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=32 ttl=239 time=17.3 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=33 ttl=239 time=17.0 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=34 ttl=239 time=17.0 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=35 ttl=239 time=17.1 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=36 ttl=239 time=16.8 ms
+30 bytes from cilr.uq.edu.au (130.102.184.3): icmp_req=37 ttl=239 time=17.1 ms
+
+--- www.uq.edu.au ping statistics ---
+37 packets transmitted, 37 received, 0% packet loss, time 36052ms
+rtt min/avg/max/mdev = 16.596/17.008/17.349/0.205 ms
+
+www.dlsu.edu.ph
+PING www.dlsu.edu.ph (103.231.241.180) 22(50) bytes of data.
+30 bytes from 103.231.241.180: icmp_req=1 ttl=114 time=319 ms
+30 bytes from 103.231.241.180: icmp_req=2 ttl=114 time=320 ms
+30 bytes from 103.231.241.180: icmp_req=3 ttl=114 time=318 ms
+
+--- www.dlsu.edu.ph ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 48671ms
+rtt min/avg/max/mdev = 318.857/319.347/320.109/0.546 ms
+
+www.tu-berlin.de
+PING www.tu-berlin.de (130.149.7.201) 22(50) bytes of data.
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=1 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=2 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=3 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=4 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=5 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=6 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=7 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=8 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=9 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=10 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=11 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=12 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=13 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=14 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=15 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=16 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=17 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=18 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=19 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=20 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=21 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=22 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=23 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=24 ttl=240 time=288 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=25 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=26 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=27 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=28 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=29 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=30 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=31 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=32 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=33 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=34 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=35 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=36 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=37 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=38 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=39 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=40 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=41 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=42 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=43 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=44 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=45 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=46 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=47 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=48 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=49 ttl=240 time=287 ms
+30 bytes from www.tu-berlin.de (130.149.7.201): icmp_req=50 ttl=240 time=287 ms
+
+--- www.tu-berlin.de ping statistics ---
+50 packets transmitted, 50 received, 0% packet loss, time 49072ms
+rtt min/avg/max/mdev = 287.292/287.507/288.033/0.603 ms
+
+
+Exercise 4_3
+
+(1)
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ traceroute www.epfl.ch
+traceroute to www.epfl.ch (104.20.229.42), 30 hops max, 60 byte packets
+ 1  cserouter1-server.cse.unsw.EDU.AU (129.94.242.251)  0.177 ms  0.167 ms  0.155 ms
+ 2  129.94.39.17 (129.94.39.17)  0.907 ms  0.910 ms  0.916 ms
+ 3  libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  2.915 ms  2.838 ms  2.855 ms
+ 4  ombcr1-po-6.gw.unsw.edu.au (149.171.255.169)  1.178 ms  1.196 ms  1.212 ms
+ 5  unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.315 ms unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.337 ms  1.342 ms
+ 6  138.44.5.0 (138.44.5.0)  1.390 ms  2.266 ms  2.261 ms
+ 7  113.197.15.101 (113.197.15.101)  1.309 ms  1.329 ms  1.334 ms
+ 8  as4826.sydney.megaport.com (103.26.68.248)  2.106 ms  2.351 ms  2.440 ms
+ 9  be-111.cor01.syd11.nsw.vocus.net.au (175.45.72.32)  1.778 ms  1.730 ms BE-110.cor02.syd04.nsw.VOCUS.net.au (175.45.72.30)  1.693 ms
+10  BE-101.bdr02.syd03.nsw.VOCUS.net.au (114.31.192.37)  2.445 ms  2.547 ms  2.075 ms
+11  as13335.bdr02.syd03.nsw.VOCUS.net.au (175.45.124.197)  5.821 ms  6.032 ms  6.122 ms
+12  104.20.229.42 (104.20.229.42)  1.464 ms  1.473 ms  1.597 ms
+
+(2)
+z5238059@vx5:/tmp_amd/cage/export/cage/5/z5238059$ whois 104.20.229.42
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2020, American Registry for Internet Numbers, Ltd.
+#
+
+
+NetRange:       104.16.0.0 - 104.31.255.255
+CIDR:           104.16.0.0/12
+NetName:        CLOUDFLARENET
+NetHandle:      NET-104-16-0-0-1
+Parent:         NET104 (NET-104-0-0-0-0)
+NetType:        Direct Assignment
+OriginAS:       AS13335
+Organization:   Cloudflare, Inc. (CLOUD14)
+RegDate:        2014-03-28
+Updated:        2017-02-17
+Comment:        All Cloudflare abuse reporting can be done via https://www.cloudflare.com/abuse
+Ref:            https://rdap.arin.net/registry/ip/104.16.0.0
+
+
+
+OrgName:        Cloudflare, Inc.
+OrgId:          CLOUD14
+Address:        101 Townsend Street
+City:           San Francisco
+StateProv:      CA
+PostalCode:     94107
+Country:        US
+RegDate:        2010-07-09
+Updated:        2019-09-25
+Ref:            https://rdap.arin.net/registry/entity/CLOUD14
+
+OrgNOCHandle: NOC11962-ARIN
+OrgNOCName:   NOC
+OrgNOCPhone:  +1-650-319-8930 
+OrgNOCEmail:  noc@cloudflare.com
+OrgNOCRef:    https://rdap.arin.net/registry/entity/NOC11962-ARIN
+
+OrgAbuseHandle: ABUSE2916-ARIN
+OrgAbuseName:   Abuse
+OrgAbusePhone:  +1-650-319-8930 
+OrgAbuseEmail:  abuse@cloudflare.com
+OrgAbuseRef:    https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
+
+OrgTechHandle: ADMIN2521-ARIN
+OrgTechName:   Admin
+OrgTechPhone:  +1-650-319-8930 
+OrgTechEmail:  rir@cloudflare.com
+OrgTechRef:    https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
+
+RTechHandle: ADMIN2521-ARIN
+RTechName:   Admin
+RTechPhone:  +1-650-319-8930 
+RTechEmail:  rir@cloudflare.com
+RTechRef:    https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
+
+RAbuseHandle: ABUSE2916-ARIN
+RAbuseName:   Abuse
+RAbusePhone:  +1-650-319-8930 
+RAbuseEmail:  abuse@cloudflare.com
+RAbuseRef:    https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
+
+RNOCHandle: NOC11962-ARIN
+RNOCName:   NOC
+RNOCPhone:  +1-650-319-8930 
+RNOCEmail:  noc@cloudflare.com
+RNOCRef:    https://rdap.arin.net/registry/entity/NOC11962-ARIN
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2020, American Registry for Internet Numbers, Ltd.
+#
